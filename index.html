@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District and Municipality Form</title>
+</head>
+<body>
+    <h1>Select District and Municipality</h1>
+    <form action="../E-Governance/pages/InitalDatabaseHitPHP.php" method="POST">
+        <!-- District Dropdown -->
+        <label for="district">District:</label>
+        <select name="district" id="district" required>
+            <!-- <option value="">-- Select District --</option> -->
+            <!-- <option value="Kathmandu">Kathmandu</option>
+            <option value="Lalitpur">Lalitpur</option> -->
+            <option value="Bhaktapur">Bhaktapur</option>
+        </select>
+
+        <br><br>
+
+        <!-- Municipality Dropdown -->
+        <label for="municipality">Municipality:</label>
+        <select name="municipality" id="municipality" required>
+            <!-- <option value="">-- Select Municipality --</option> -->
+            <option value="Bhaktapur">Bhaktapur Metro</option>
+            <!-- <option value="Madyapur thimi">Madyapur thimi Metro</option>
+            <option value="">test Metro</option> -->
+        </select>
+
+        <br><br>
+        mapnumber:
+        <input type="text" name="mapnumber" value="5KA">
+        <br>
+
+        kitanumber:
+        <input type="number" name="kitanumber" value="432">
+
+        area:
+        <input type="text" name="area" value="0-0-2-1">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

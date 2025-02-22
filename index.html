@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Select District and Municipality</h1>
-    <form action="../E-Governance/pages/InitalDatabaseHitPHP.php" method="POST">
+    <form action="../E-Governance/pages/process.php" method="POST">
         <!-- District Dropdown -->
         <label for="district">District:</label>
         <select name="district" id="district" required>
@@ -23,9 +23,9 @@
         <label for="municipality">Municipality:</label>
         <select name="municipality" id="municipality" required>
             <!-- <option value="">-- Select Municipality --</option> -->
-            <option value="Bhaktapur">Bhaktapur Metro</option>
-            <!-- <option value="Madyapur thimi">Madyapur thimi Metro</option>
-            <option value="">test Metro</option> -->
+            <!-- <option value="Bhaktapur">Bhaktapur Metro</option> -->
+            <option value="Bhaktapur"></option> 
+            <!-- <option value="">test Metro</option>  -->
         </select>
 
         <br><br>
@@ -34,7 +34,7 @@
         <br>
 
         kitanumber:
-        <input type="number" name="kitanumber" value="432">
+        <input type="text" name="kitanumber" value="432">
 
         area:
         <input type="text" name="area" value="0-0-2-1">

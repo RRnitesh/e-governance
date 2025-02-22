@@ -2,10 +2,11 @@
 namespace App;
 
 class APIResponse{
-  public function __construct($status, $message,$landInfo =null, $UserInfo = null)
+  public function __construct($status, $message,$landRate =null, $UserInfo = null, $buildingInfo = null)
   {
     header("Content-type: application/json");
-    echo json_encode(["status"=> $status,"message"=> $message,"landinfo"=> $landInfo,'userInfo' =>$UserInfo]);
+    echo json_encode(["status"=> $status,"message"=> $message,
+    "landRate"=> $landRate,'userInfo' =>$UserInfo, 'buildingInfo' => $buildingInfo]);
     exit;
   }
 }
